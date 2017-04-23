@@ -1,0 +1,203 @@
+
+
+.whole-thing {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+/*a {
+  color: purple;
+  transition: all .5s;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+}*/
+
+a { 
+  color: grey;
+   text-decoration: none;
+   -webkit-transition:color .25s ease-in; 
+   -moz-transition:color .25s ease-in; 
+   -o-transition:color .25s ease-in; 
+   transition:color .25s ease-in; 
+}
+a:hover {
+  color:purple;
+  text-decoration: none;
+  }
+
+
+header {
+  height: 100%;
+  min-height: 500px;
+  width: 100%;
+  padding: 20px;
+  background-attachment: scroll;
+  display: block;
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 0px 0;
+  background: no-repeat center center;
+  background-attachment: scroll;
+  background-color: #222;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  color: white; 
+}
+
+header .scroll-down {
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header .scroll-down .btn {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: normal;
+  color: #fff;
+  -webkit-transition:all .5s ease-in; 
+   -moz-transition:all .5s ease-in; 
+   -o-transition:all .5s ease-in; 
+   transition:all .5s ease-in; 
+}
+header .scroll-down .btn:hover {
+  border-color:purple;
+  color: purple;
+  }
+
+.intro-content {
+  padding-top: 80px;
+}
+
+.content-row {
+  margin-top: 30px;
+}
+
+.bg-grey {
+  background-color: #f5f5f5;
+}
+
+h1 {
+  font-weight: 200;
+  letter-spacing: 4px;
+  text-transform: lowercase;
+}
+
+#big-name {
+  font-size: 50px;
+  font-weight: 100;
+  text-transform: lowercase;
+  letter-spacing: 6px;
+}
+
+/*#profile-image {
+  max-height: 250px;
+}*/
+
+#about {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+#skills {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#portfolio {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#other-stuff {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.img-resize {
+  height: 200px;
+  width: auto;
+  border-radius: 10px;
+}
+
+#contact {
+  padding-top: 10px;
+  padding-bottom: 50px;
+    background: #FFFFFF;
+    margin: 30px;
+}
+
+#contactForm {
+    font-family: 'Open Sans Condensed', arial, sans;
+}
+
+form .form-text-input {
+  padding-bottom: .5em;
+  margin-bottom: 0px;
+  padding-bottom: .5em;
+  padding-top: .5em;
+  position: relative;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 20px;
+  box-shadow: none;
+}
+
+form .row:first-child .form-text-input {
+    border-top: 1px solid #e1e1e1;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+   outline: -webkit-focus-ring-color auto 0px;
+}
+
+footer {
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #000000;
+}
+
+footer .copyright {
+  padding-top: 10px;
+}
+
+footer.footer .social {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+footer .scroll-up .btn {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  font-size: 30px;
+  line-height: 44px;
+  letter-spacing: normal;
+  color: #fff;
+  -webkit-transition:all .5s ease-in; 
+   -moz-transition:all .5s ease-in; 
+   -o-transition:all .5s ease-in; 
+   transition:all .5s ease-in; 
+}
+
+footer .scroll-up .btn:hover {
+  border-color:purple;
+  color: purple;
+  }

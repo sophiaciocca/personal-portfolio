@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>sophia ciocca</title>
+
+  <!--Loading in all stylesheets (bootstrap, animated.css, fontawesome, + my own) + jQuery-->
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+  <!--Smooth Scrolling Script-->
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+    
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+  
+</head>
+<body>
+
+  <body id="page-top">
+    <div class="whole-thing container-fluid text-center">
+
+      <!--Navigation Bar-->
+      <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+
+            <!--Mobile Button stuff-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>           
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+            <!--Rest of Navigation Bar-->
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="hidden active">
+                  <a href="#page-top"></a>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://medium.com/@sophiaciocca/latest" target="_blank">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+
+      <!--Header/First Section-->
+      <header style="background-image: url('img/profpic.jpg');">
+        <div class="intro-content text-center container wow fadeIn animated">
+          <!--Name-->
+          <div id="big-name">Sophia Ciocca
+          </div>
+          <div>
+            I make clean, beautiful websites and software. I also am a creative human who makes art.
+          </div>
+        </div>
+
+        <!--Little circle with scroll arrow-->
+        <div class="scroll-down">
+          <a class="btn" href="#about">
+            <i class="fa fa-angle-down fa-fw fa-2x" style="font-size: 30px"></i>
+          </a>
+        </div>
+      </header>
+
+      <!--About/bio page-->
+      <section id="about" class="bg-grey">
+        <div class="container-fluid">
+          <div class="row text-center">
+            <div class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col-lg-12 wow fadeIn">
+                    <h1>background</h1>
+                  </div>
+                </div>
+                <br>
+                <div class="container-fluid">
+                  <div class="row-fluid">
+                    <!--<div class="col-lg-3 col-lg-offset-1 wow fadeIn"><img src="http://i68.tinypic.com/2dt27i8.png" class="img img-responsive" id="profile-image" alt="Sophia Ciocca"></div>-->
+                    <div class="col-lg-8 wow fadeIn" style="text-align: left;">
+                      <p><strong>I'm interested in the power of art, mindfulness, and technology to create a better world.</strong></p>
+
+                      <p>I imagine a world in which everyone has the opportunity to live to full potential. In which everyone
+                        is encouraged to <em>create</em>, <em>explore</em>, and <em>discover</em> through accessible art,
+                        dynamic forms of education, and easy access to wellness. I want to make this world a reality.</p>
+
+                      <p>I'm a <strong>maker</strong>—from <a href="https://medium.com/@sophiaciocca/latest" target="_blank">blogging</a>                        to <a href="https://www.youtube.com/channel/UChfrVcFHC-mfoqrJHuOYt-Q" target="_blank">music-making</a>,
+                        <a href="http://sophiacioccaphotography.tumblr.com/" target="_blank">photography</a> to <a href="https://www.instagram.com/sidewalk_poetry/"
+                          target="_blank">guerilla sidewalk chalk street art</a>. I also like to meditate, talk to strangers,
+                        and run lifestyle experiments.</p>
+
+                      <p>I'm currently learning to develop software in Javascript at Fullstack Academy's Grace Hopper Program.
+                        In 2016, I served in the Peace Corps, where I was teaching entrepreneurship to high school students
+                        in Nicaragua. Before that, I worked for IBM, management consulting for large corporations. I hold
+                        a degree in economics from the University of Pennsylvania, and I live in NYC.</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!--"Skills" section-->
+      <!--<section id="skills" class="bg-grey wow fadeIn animated">
+      <h1>I've got skills</h1>
+      <div class="row text-center content-row">
+        [row of main qualities/things here]
+      </div>
+    </section>-->
+
+      <!-- "Work / Portfolio" section-->
+      <section id="portfolio" class="wow fadeIn animated">
+        <h1>Work</h1>
+        <div class="row text-center content-row">portfolio content here</div>
+      </section>
+
+      <!--"Other stuff I do" section-->
+      <section id="other-stuff" class="wow fadeIn animated bg-grey">
+        <h1>Other Things I Do</h1>
+
+        <div class="row text-center content-row">
+          <!--medium blog-->
+          <div class="col-lg-4 wow fadeIn otherthing">
+            <a href="https://medium.com/@sophiaciocca/latest" target="_blank"><img src="http://i65.tinypic.com/20qe0d1.jpg" class="img-resize"></a><br>
+            <a href="https://medium.com/@sophiaciocca/latest" target="_blank">
+              <h4>blogging</h4>
+            </a>
+            I write about personal growth, tech, mindfulness, and my unfiltered experience. I've also been featured on <a href = "http://www.huffingtonpost.com/author/sophia-ciocca">The Huffington Post</a> and <a href = "http://thoughtcatalog.com/sophia-ciocca/">ThoughtCatalog</a>.
+          </div>
+          <!--photography tumblr-->
+          <div class="col-lg-4 wow fadeIn otherthing">
+            <a href="http://sophiacioccaphotography.tumblr.com/" target="_blank"><img src="http://i66.tinypic.com/2q80nia.jpg" class="img-resize"></a><br>
+            <a href="http://sophiacioccaphotography.tumblr.com/" target="_blank">
+              <h4>photography</h4>
+            </a>
+          </div>
+
+          <!--sidewalk poetry-->
+          <div class="col-lg-4 wow fadeIn otherthing">
+            <a href="https://www.instagram.com/sidewalk_poetry/" target="_blank"><img src="http://i65.tinypic.com/2rcbtb6.jpg" class="img-resize"></a><br>
+            <a href="https://www.instagram.com/sidewalk_poetry/" target="_blank">
+              <h4>sidewalk_poetry</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="row text-center content-row">
+          <!--art and fragments-->
+          <div class="col-lg-4 wow fadeIn otherthing">
+            <a href="http://artandfragments.tumblr.com/" target="_blank"><img src="http://i65.tinypic.com/ezh3eh.jpg" class="img-resize"></a><br>
+            <a href="http://artandfragments.tumblr.com/">
+              <h4>creative writing</h4>
+            </a>
+          </div>
+
+          <!--youtube singing-->
+          <div class="col-lg-4 wow fadeIn otherthing">
+            <a href="https://www.youtube.com/channel/UChfrVcFHC-mfoqrJHuOYt-Q" target="_blank"><img src="http://i64.tinypic.com/16lw755.jpg" class="img-resize"></a><br>
+            <a href="https://www.youtube.com/channel/UChfrVcFHC-mfoqrJHuOYt-Q" target="_blank">
+              <h4>youtube</h4>
+            </a>
+          </div>
+
+          <!--tea with strangers-->
+          <div class="col-lg-4 wow fadeIn otherthing">
+            <a href="http://www.teawithstrangers.com/" target="_blank"><img src="http://i67.tinypic.com/tamyko.jpg" class="img-resize"></a><br>
+            <a href="http://www.teawithstrangers.com/" target="_blank">
+              <h4>tea with strangers</h4>
+            </a>
+          </div>
+
+        </div>
+
+
+      </section>
+
+      <!--"Contact" section-->
+      <section class="contact-padding" id="contact">
+        <div class="container wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1>Contact Me</h1>
+              <p>Questions? Freelance inquiries? Ideas/inspiration/ramblings? Please, send them my way!<br>(Or, just shoot me
+                an email at <a href="mailto:sophiaciocca@gmail.com" target="_blank">sophiaciocca@gmail.com</a>.)</p>
+            </div>
+          </div>
+          <br>
+          <!--Contact Form-->
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <form id="contactForm" novalidate>
+                <div class="row">
+                  <div class="form-group col-xs-12 form-text-input">
+                    <input type="text" class="form-control form-text-input" id="name" style="border: none;" placeholder="Name" style="border-style: none;"
+                      required data-validation-required-message="Please enter your name!">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group form-text-input col-xs-12">
+                    <input type="text" class="form-control form-text-input" id="email" style="border-style: none;" placeholder="Email Address"
+                      required data-validation-required-message="Please enter your email address!" aria-invalid="false">
+                  </div>
+                </div>
+                <div class="row">
+
+                  <div class="form-group col-xs-12 form-text-input">
+                    <textarea rows="5" class="form-control form-text-input" placeholder="Message" id="message" style="border-style:none;" required
+                      data-validation-required-message="Please enter a message!"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-xs-12" style="padding-top: .8em;" align="left">
+                    <button type="submit" class="btn">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Footer-->
+      <footer class="footer social-padding" id="footer">
+        <div class="container text-center">
+          <div class="row social">
+            <div class="col-lg-12">
+              <ul class="list-inline">
+                <li><a href="mailto:sophiaciocca@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw fa-2x" style="color:white;"></i></a></li>
+                <li>
+                  <a href="http://www.facebook.com/sophia.ciocca" target="_blank"> <i class="fa fa-facebook fa-fw fa-2x" style="color:white;"></i>
+                  </a>
+                </li>
+                <li><a href="http://www.linkedin.com/in/sophiaciocca" target="_blank"><i class="fa fa-linkedin fa-fw fa-2x" style="color:white;"></i></a></li>
+                <li><a href="https://github.com/sophiaciocca" target="_blank"><i class="fa fa-github fa-fw fa-2x" style="color:white;"></i></a></li>
+                <li><a href="https://medium.com/@sophiaciocca/latest" target="_blank"><i class="fa fa-medium fa-fw fa-2x" style="color:white;"></i></a></li>
+              </ul>
+              <br>
+              <div class="scroll-up">
+                <!--scroll-up button-->
+                <a class="btn" href="#page-top"><i class="fa fa-angle-up fa-fw"></i></a> </div>
+            </div>
+          </div>
+          <div class="row copyright">
+            <div class="col-lg-12">
+              <p class="small">© 2016 Sophia Ciocca</p>
+              <p class="small">This site was lovingly created using HTML5, CSS3, and Bootstrap.
+            </div>
+          </div>
+
+
+        </div>
+      </footer>
+
+  </body>
+
+
+</body>
+
+</html>
